@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "Calhoun Suarez",
+      "image": "http://i.pravatar.cc/250",
+      "age": 20
+    },
+    {
+      "id": 1,
+      "name": "Ilene Rowe",
+      "image": "http://i.pravatar.cc/250",
+      "age": 40
+    },
+    {
+      "id": 2,
+      "name": "Cameron Estes",
+      "image": "http://i.pravatar.cc/250",
+      "age": 37
+    },
+    {
+      "id": 3,
+      "name": "Kristen Michael",
+      "image": "http://i.pravatar.cc/250",
+      "age": 25
+    }
+  ]
+}
