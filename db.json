@@ -1,28 +1,9 @@
 {
-  "users": [
+  "hospital": [
     {
       "id": 0,
-      "name": "Calhoun Suarez",
-      "image": "https://placeimg.com/300/300/people",
-      "age": 20
-    },
-    {
-      "id": 1,
-      "name": "Ilene Rowe",
-      "image": "https://placeimg.com/300/300/people",
-      "age": 40
-    },
-    {
-      "id": 2,
-      "name": "Cameron Estes",
-      "image": "https://placeimg.com/300/300/people",
-      "age": 37
-    },
-    {
-      "id": 3,
-      "name": "Kristen Michael",
-      "image": "https://placeimg.com/300/300/people",
-      "age": 25
+      "name": "Hospital Gastrovita",
+      "logo": "http://hospitalgastrovita.com.br/media/core/img/logotipo-2.png"
     }
   ]
 }
