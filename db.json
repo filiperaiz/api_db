@@ -1,410 +1,332 @@
 [
-  {
-    "weight": 69,
-    "height": 7,
-    "experience": 64,
-    "abilities": [
-      "chlorophyll",
-      "overgrow"
-    ],
-    "types": [
-      "poison",
-      "grass"
-    ],
-    "image": "images/pokemons/bulbasaur.png",
-    "name": "bulbasaur",
-    "id": 1
-  },
-  {
-    "weight": 130,
-    "height": 10,
-    "experience": 142,
-    "abilities": [
-      "chlorophyll",
-      "overgrow"
-    ],
-    "types": [
-      "poison",
-      "grass"
-    ],
-    "image": "images/pokemons/ivysaur.png",
-    "name": "ivysaur",
-    "id": 2
-  },
-  {
-    "weight": 1000,
-    "height": 20,
-    "experience": 236,
-    "abilities": [
-      "chlorophyll",
-      "overgrow"
-    ],
-    "types": [
-      "poison",
-      "grass"
-    ],
-    "image": "images/pokemons/venusaur.png",
-    "name": "venusaur",
-    "id": 3
-  },
-  {
-    "weight": 85,
-    "height": 6,
-    "experience": 62,
-    "abilities": [
-      "solar-power",
-      "blaze"
-    ],
-    "types": [
-      "fire"
-    ],
-    "image": "images/pokemons/charmander.png",
-    "name": "charmander",
-    "id": 4
-  },
-  {
-    "weight": 190,
-    "height": 11,
-    "experience": 142,
-    "abilities": [
-      "solar-power",
-      "blaze"
-    ],
-    "types": [
-      "fire"
-    ],
-    "image": "images/pokemons/charmeleon.png",
-    "name": "charmeleon",
-    "id": 5
-  },
-  {
-    "weight": 905,
-    "height": 17,
-    "experience": 240,
-    "abilities": [
-      "solar-power",
-      "blaze"
-    ],
-    "types": [
-      "flying",
-      "fire"
-    ],
-    "image": "images/pokemons/charizard.png",
-    "name": "charizard",
-    "id": 6
-  },
-  {
-    "weight": 90,
-    "height": 5,
-    "experience": 63,
-    "abilities": [
-      "rain-dish",
-      "torrent"
-    ],
-    "types": [
-      "water"
-    ],
-    "image": "images/pokemons/squirtle.png",
-    "name": "squirtle",
-    "id": 7
-  },
-  {
-    "weight": 225,
-    "height": 10,
-    "experience": 142,
-    "abilities": [
-      "rain-dish",
-      "torrent"
-    ],
-    "types": [
-      "water"
-    ],
-    "image": "images/pokemons/wartortle.png",
-    "name": "wartortle",
-    "id": 8
-  },
-  {
-    "weight": 855,
-    "height": 16,
-    "experience": 239,
-    "abilities": [
-      "rain-dish",
-      "torrent"
-    ],
-    "types": [
-      "water"
-    ],
-    "image": "images/pokemons/blastoise.png",
-    "name": "blastoise",
-    "id": 9
-  },
-  {
-    "weight": 29,
-    "height": 3,
-    "experience": 39,
-    "abilities": [
-      "run-away",
-      "shield-dust"
-    ],
-    "types": [
-      "bug"
-    ],
-    "image": "images/pokemons/caterpie.png",
-    "name": "caterpie",
-    "id": 10
-  },
-  {
-    "weight": 99,
-    "height": 7,
-    "experience": 72,
-    "abilities": [
-      "shed-skin"
-    ],
-    "types": [
-      "bug"
-    ],
-    "image": "images/pokemons/metapod.png",
-    "name": "metapod",
-    "id": 11
-  },
-  {
-    "weight": 320,
-    "height": 11,
-    "experience": 178,
-    "abilities": [
-      "tinted-lens",
-      "compound-eyes"
-    ],
-    "types": [
-      "flying",
-      "bug"
-    ],
-    "image": "images/pokemons/butterfree.png",
-    "name": "butterfree",
-    "id": 12
-  },
-  {
-    "weight": 32,
-    "height": 3,
-    "experience": 39,
-    "abilities": [
-      "run-away",
-      "shield-dust"
-    ],
-    "types": [
-      "poison",
-      "bug"
-    ],
-    "image": "images/pokemons/weedle.png",
-    "name": "weedle",
-    "id": 13
-  },
-  {
-    "weight": 100,
-    "height": 6,
-    "experience": 72,
-    "abilities": [
-      "shed-skin"
-    ],
-    "types": [
-      "poison",
-      "bug"
-    ],
-    "image": "images/pokemons/kakuna.png",
-    "name": "kakuna",
-    "id": 14
-  },
-  {
-    "weight": 295,
-    "height": 10,
-    "experience": 178,
-    "abilities": [
-      "sniper",
-      "swarm"
-    ],
-    "types": [
-      "poison",
-      "bug"
-    ],
-    "image": "images/pokemons/beedrill.png",
-    "name": "beedrill",
-    "id": 15
-  },
-  {
-    "weight": 18,
-    "height": 3,
-    "experience": 50,
-    "abilities": [
-      "big-pecks",
-      "tangled-feet",
-      "keen-eye"
-    ],
-    "types": [
-      "flying",
-      "normal"
-    ],
-    "image": "images/pokemons/pidgey.png",
-    "name": "pidgey",
-    "id": 16
-  },
-  {
-    "weight": 300,
-    "height": 11,
-    "experience": 122,
-    "abilities": [
-      "big-pecks",
-      "tangled-feet",
-      "keen-eye"
-    ],
-    "types": [
-      "flying",
-      "normal"
-    ],
-    "image": "images/pokemons/pidgeotto.png",
-    "name": "pidgeotto",
-    "id": 17
-  },
-  {
-    "weight": 395,
-    "height": 15,
-    "experience": 216,
-    "abilities": [
-      "big-pecks",
-      "tangled-feet",
-      "keen-eye"
-    ],
-    "types": [
-      "flying",
-      "normal"
-    ],
-    "image": "images/pokemons/pidgeot.png",
-    "name": "pidgeot",
-    "id": 18
-  },
-  {
-    "weight": 35,
-    "height": 3,
-    "experience": 51,
-    "abilities": [
-      "hustle",
-      "guts",
-      "run-away"
-    ],
-    "types": [
-      "normal"
-    ],
-    "image": "images/pokemons/rattata.png",
-    "name": "rattata",
-    "id": 19
-  },
-  {
-    "weight": 185,
-    "height": 7,
-    "experience": 145,
-    "abilities": [
-      "hustle",
-      "guts",
-      "run-away"
-    ],
-    "types": [
-      "normal"
-    ],
-    "image": "images/pokemons/raticate.png",
-    "name": "raticate",
-    "id": 20
-  },
-  {
-    "weight": 20,
-    "height": 3,
-    "experience": 52,
-    "abilities": [
-      "sniper",
-      "keen-eye"
-    ],
-    "types": [
-      "flying",
-      "normal"
-    ],
-    "image": "images/pokemons/spearow.png",
-    "name": "spearow",
-    "id": 21
-  },
-  {
-    "weight": 380,
-    "height": 12,
-    "experience": 155,
-    "abilities": [
-      "sniper",
-      "keen-eye"
-    ],
-    "types": [
-      "flying",
-      "normal"
-    ],
-    "image": "images/pokemons/fearow.png",
-    "name": "fearow",
-    "id": 22
-  },
-  {
-    "weight": 69,
-    "height": 20,
-    "experience": 58,
-    "abilities": [
-      "unnerve",
-      "shed-skin",
-      "intimidate"
-    ],
-    "types": [
-      "poison"
-    ],
-    "image": "images/pokemons/ekans.png",
-    "name": "ekans",
-    "id": 23
-  },
-  {
-    "weight": 650,
-    "height": 35,
-    "experience": 157,
-    "abilities": [
-      "unnerve",
-      "shed-skin",
-      "intimidate"
-    ],
-    "types": [
-      "poison"
-    ],
-    "image": "images/pokemons/arbok.png",
-    "name": "arbok",
-    "id": 24
-  },
-  {
-    "weight": 60,
-    "height": 4,
-    "experience": 112,
-    "abilities": [
-      "lightning-rod",
-      "static"
-    ],
-    "types": [
-      "electric"
-    ],
-    "image": "images/pokemons/pikachu.png",
-    "name": "pikachu",
-    "id": 25
-  },
-  {
-    "weight": 300,
-    "height": 8,
-    "experience": 218,
-    "abilities": [
-      "lightning-rod",
-      "static"
-    ],
-    "types": [
-      "electric"
-    ],
-    "image": "images/pokemons/raichu.png",
-    "name": "raichu",
-    "id": 26
-  }
-]
+    {
+      "weight": 69,
+      "height": 7,
+      "abilities": [
+        "chlorophyll",
+        "overgrow"
+      ],
+      "types": [
+        "poison",
+        "grass"
+      ],
+      "name": "bulbasaur"
+    },
+    {
+      "weight": 130,
+      "height": 10,
+      "abilities": [
+        "chlorophyll",
+        "overgrow"
+      ],
+      "types": [
+        "poison",
+        "grass"
+      ],
+      "name": "ivysaur"
+    },
+    {
+      "weight": 1000,
+      "height": 20,
+      "abilities": [
+        "chlorophyll",
+        "overgrow"
+      ],
+      "types": [
+        "poison",
+        "grass"
+      ],
+      "name": "venusaur"
+    },
+    {
+      "weight": 85,
+      "height": 6,
+      "abilities": [
+        "solar-power",
+        "blaze"
+      ],
+      "types": [
+        "fire"
+      ],
+      "name": "charmander"
+    },
+    {
+      "weight": 190,
+      "height": 11,
+      "abilities": [
+        "solar-power",
+        "blaze"
+      ],
+      "types": [
+        "fire"
+      ],
+      "name": "charmeleon"
+    },
+    {
+      "weight": 905,
+      "height": 17,
+      "abilities": [
+        "solar-power",
+        "blaze"
+      ],
+      "types": [
+        "flying",
+        "fire"
+      ],
+      "name": "charizard"
+    },
+    {
+      "weight": 90,
+      "height": 5,
+      "abilities": [
+        "rain-dish",
+        "torrent"
+      ],
+      "types": [
+        "water"
+      ],
+      "name": "squirtle"
+    },
+    {
+      "weight": 225,
+      "height": 10,
+      "abilities": [
+        "rain-dish",
+        "torrent"
+      ],
+      "types": [
+        "water"
+      ],
+      "name": "wartortle"
+    },
+    {
+      "weight": 855,
+      "height": 16,
+      "abilities": [
+        "rain-dish",
+        "torrent"
+      ],
+      "types": [
+        "water"
+      ],
+      "name": "blastoise"
+    },
+    {
+      "weight": 29,
+      "height": 3,
+      "abilities": [
+        "run-away",
+        "shield-dust"
+      ],
+      "types": [
+        "bug"
+      ],
+      "name": "caterpie"
+    },
+    {
+      "weight": 99,
+      "height": 7,
+      "abilities": [
+        "shed-skin"
+      ],
+      "types": [
+        "bug"
+      ],
+      "name": "metapod"
+    },
+    {
+      "weight": 320,
+      "height": 11,
+      "abilities": [
+        "tinted-lens",
+        "compound-eyes"
+      ],
+      "types": [
+        "flying",
+        "bug"
+      ],
+      "name": "butterfree"
+    },
+    {
+      "weight": 32,
+      "height": 3,
+      "abilities": [
+        "run-away",
+        "shield-dust"
+      ],
+      "types": [
+        "poison",
+        "bug"
+      ],
+      "name": "weedle"
+    },
+    {
+      "weight": 100,
+      "height": 6,
+      "abilities": [
+        "shed-skin"
+      ],
+      "types": [
+        "poison",
+        "bug"
+      ],
+      "name": "kakuna"
+    },
+    {
+      "weight": 295,
+      "height": 10,
+      "abilities": [
+        "sniper",
+        "swarm"
+      ],
+      "types": [
+        "poison",
+        "bug"
+      ],
+      "name": "beedrill"
+    },
+    {
+      "weight": 18,
+      "height": 3,
+      "abilities": [
+        "big-pecks",
+        "tangled-feet",
+        "keen-eye"
+      ],
+      "types": [
+        "flying",
+        "normal"
+      ],
+      "name": "pidgey"
+    },
+    {
+      "weight": 300,
+      "height": 11,
+      "abilities": [
+        "big-pecks",
+        "tangled-feet",
+        "keen-eye"
+      ],
+      "types": [
+        "flying",
+        "normal"
+      ],
+      "name": "pidgeotto"
+    },
+    {
+      "weight": 395,
+      "height": 15,
+      "abilities": [
+        "big-pecks",
+        "tangled-feet",
+        "keen-eye"
+      ],
+      "types": [
+        "flying",
+        "normal"
+      ],
+      "name": "pidgeot"
+    },
+    {
+      "weight": 35,
+      "height": 3,
+      "abilities": [
+        "hustle",
+        "guts",
+        "run-away"
+      ],
+      "types": [
+        "normal"
+      ],
+      "name": "rattata"
+    },
+    {
+      "weight": 185,
+      "height": 7,
+      "abilities": [
+        "hustle",
+        "guts",
+        "run-away"
+      ],
+      "types": [
+        "normal"
+      ],
+      "name": "raticate"
+    },
+    {
+      "weight": 20,
+      "height": 3,
+      "abilities": [
+        "sniper",
+        "keen-eye"
+      ],
+      "types": [
+        "flying",
+        "normal"
+      ],
+      "name": "spearow"
+    },
+    {
+      "weight": 380,
+      "height": 12,
+      "abilities": [
+        "sniper",
+        "keen-eye"
+      ],
+      "types": [
+        "flying",
+        "normal"
+      ],
+      "name": "fearow"
+    },
+    {
+      "weight": 69,
+      "height": 20,
+      "abilities": [
+        "unnerve",
+        "shed-skin",
+        "intimidate"
+      ],
+      "types": [
+        "poison"
+      ],
+      "name": "ekans"
+    },
+    {
+      "weight": 650,
+      "height": 35,
+      "abilities": [
+        "unnerve",
+        "shed-skin",
+        "intimidate"
+      ],
+      "types": [
+        "poison"
+      ],
+      "name": "arbok"
+    },
+    {
+      "weight": 60,
+      "height": 4,
+      "abilities": [
+        "lightning-rod",
+        "static"
+      ],
+      "types": [
+        "electric"
+      ],
+      "name": "pikachu"
+    },
+    {
+      "weight": 300,
+      "height": 8,
+      "abilities": [
+        "lightning-rod",
+        "static"
+      ],
+      "types": [
+        "electric"
+      ],
+      "name": "raichu,
+    }
+  ]
