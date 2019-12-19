@@ -1,29 +1,16 @@
 {
-  "posts": [
+  "profiles": [
     {
       "id":1,
-      "name":"myaccount",
+      "key": "token",
+      "origin":"myaccount",
       "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
     },
     {
       "id":2,
-      "name":"conversion",
+      "key": "token",
+      "origin":"conversion",
       "token":"eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    },
-    {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
 }
