@@ -1,87 +1,618 @@
 {
-  "page1": 
-    {
-      "id": "41ba0500-234f-11ea-b613-2511130d76c6",
-      "created_at": "2019-12-20T17:36:30.032Z",
-      "workflow_id": "94d3a126-234e-11ea-a566-7923e6686408",
-      "blueprint_spec": {},
-      "state": {
-        "id": "41c305b0-234f-11ea-b613-2511130d76c6",
-        "created_at": "2019-12-20T17:36:30.091Z",
-        "process_id": "41ba0500-234f-11ea-b613-2511130d76c6",
-        "step_number": 2,
-        "node_id": "page1",
-        "next_node_id": "flow1",
-        "bag": {},
-        "external_input": null,
-        "result": {
-          "data": [
-            {}
-          ]
-        },
-        "error": null,
-        "status": "waiting",
-        "actor_data": {
-          "claims": [],
-          "actor_id": 1
-        }
+  "id": "1c61f780-28dc-11ea-8113-57bd52e42c02",
+  "created_at": "2019-12-27T19:07:22.232Z",
+  "workflow_id": "d13b8870-28db-11ea-b92e-cb5b7a01f022",
+  "blueprint_spec": {
+    "lanes": [
+      {
+        "id": "1",
+        "name": "Unique Lane",
+        "rule": [
+          "fn",
+          [
+            "&",
+            "args"
+          ],
+          true
+        ]
       }
-    }
-  ,
-  "page2":
-    {
-      "id": "41ba0500-234f-11ea-b613-2511130d76c6",
-      "created_at": "2019-12-20T17:36:30.032Z",
-      "workflow_id": "94d3a126-234e-11ea-a566-7923e6686408",
-      "blueprint_spec": {},
-      "state": {
-        "id": "41c305b0-234f-11ea-b613-2511130d76c6",
-        "created_at": "2019-12-20T17:36:30.091Z",
-        "process_id": "41ba0500-234f-11ea-b613-2511130d76c6",
-        "step_number": 6,
-        "node_id": "page2",
-        "next_node_id": "8",
-        "bag": {},
-        "external_input": null,
-        "result": {
-          "data": [
-            {}
+    ],
+    "nodes": [
+      {
+        "id": "1",
+        "next": "2",
+        "type": "Start",
+        "lane_id": "1"
+      },
+      {
+        "id": "2",
+        "next": "3",
+        "type": "LispSystemTask",
+        "lane_id": "1",
+        "parameters": {
+          "fn": [
+            "fn",
+            [
+              "&",
+              "args"
+            ],
+            [
+              "js",
+              [
+                "str",
+                [
+                  "`",
+                  "set_form_on_bag("
+                ],
+                "args",
+                [
+                  "`",
+                  ")"
+                ]
+              ]
+            ]
+          ],
+          "args": [
+            {
+              "form": {
+                "id": "page1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "next": "4",
+        "type": "FunctionLispUserTask",
+        "lane_id": "1",
+        "parameters": {
+          "fn": [
+            "fn",
+            [
+              "&",
+              "args"
+            ],
+            [
+              "js",
+              [
+                "str",
+                [
+                  "`",
+                  "set_form_to_result("
+                ],
+                "args",
+                [
+                  "`",
+                  ")"
+                ]
+              ]
+            ]
+          ],
+          "fn_post": [
+            "fn",
+            [
+              "&",
+              "args"
+            ],
+            [
+              "js",
+              [
+                "str",
+                [
+                  "`",
+                  "verify_result("
+                ],
+                "args",
+                [
+                  "`",
+                  ")"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "next": {
+          "no": "3",
+          "yes": "5",
+          "default": "3"
+        },
+        "type": "LendicoFirstFlow",
+        "lane_id": "1"
+      },
+      {
+        "id": "5",
+        "next": "6",
+        "type": "LispSystemTask",
+        "lane_id": "1",
+        "parameters": {
+          "fn": [
+            "fn",
+            [
+              "&",
+              "args"
+            ],
+            [
+              "js",
+              [
+                "str",
+                [
+                  "`",
+                  "set_api_request("
+                ],
+                "args",
+                [
+                  "`",
+                  ")"
+                ]
+              ]
+            ]
+          ],
+          "args": [
+            "list",
+            [
+              "`",
+              "get"
+            ],
+            [
+              "`",
+              "https://lists-v2.lendico.com.br/api/occupations"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "6",
+        "next": "7",
+        "type": "HTTPApiRequestTask",
+        "lane_id": "1"
+      },
+      {
+        "id": "7",
+        "next": "8",
+        "type": "LispSystemTask",
+        "lane_id": "1",
+        "parameters": {
+          "fn": [
+            "fn",
+            [
+              "&",
+              "args"
+            ],
+            [
+              "js",
+              [
+                "str",
+                [
+                  "`",
+                  "set_response_on_bag("
+                ],
+                "args",
+                [
+                  "`",
+                  ")"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "8",
+        "next": {
+          "=8": "9",
+          ">8": "11"
+        },
+        "type": "LendicoSecondFlow",
+        "lane_id": "1"
+      },
+      {
+        "id": "9",
+        "next": "10",
+        "type": "LispSystemTask",
+        "lane_id": "1",
+        "parameters": {
+          "fn": [
+            "fn",
+            [
+              "&",
+              "args"
+            ],
+            [
+              "js",
+              [
+                "str",
+                [
+                  "`",
+                  "set_form_response("
+                ],
+                "args",
+                [
+                  "`",
+                  ")"
+                ]
+              ]
+            ]
+          ],
+          "args": [
+            {
+              "id": "page2"
+            }
+          ]
+        }
+      },
+      {
+        "id": "10",
+        "next": "13",
+        "type": "IdentityLispUserTask",
+        "lane_id": "1",
+        "parameters": {
+          "fn": [
+            "fn",
+            [
+              "&",
+              "args"
+            ],
+            [
+              "js",
+              [
+                "str",
+                [
+                  "`",
+                  "set_form_to_result("
+                ],
+                "args",
+                [
+                  "`",
+                  ")"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "11",
+        "next": "12",
+        "type": "LispSystemTask",
+        "lane_id": "1",
+        "parameters": {
+          "fn": [
+            "fn",
+            [
+              "&",
+              "args"
+            ],
+            [
+              "js",
+              [
+                "str",
+                [
+                  "`",
+                  "set_form_response("
+                ],
+                "args",
+                [
+                  "`",
+                  ")"
+                ]
+              ]
+            ]
+          ],
+          "args": [
+            {
+              "id": "page3"
+            }
+          ]
+        }
+      },
+      {
+        "id": "12",
+        "next": "13",
+        "type": "IdentityLispUserTask",
+        "lane_id": "1",
+        "parameters": {
+          "fn": [
+            "fn",
+            [
+              "&",
+              "args"
+            ],
+            [
+              "js",
+              [
+                "str",
+                [
+                  "`",
+                  "set_form_to_result("
+                ],
+                "args",
+                [
+                  "`",
+                  ")"
+                ]
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "id": "13",
+        "next": null,
+        "type": "Finish",
+        "lane_id": "1"
+      }
+    ],
+    "prepare": [
+      
+    ],
+    "requirements": [
+      "core",
+      "lendico"
+    ]
+  },
+  "state": {
+    "id": "7ca97d20-28dc-11ea-8113-57bd52e42c02",
+    "created_at": "2019-12-27T19:10:03.762Z",
+    "process_id": "1c61f780-28dc-11ea-8113-57bd52e42c02",
+    "step_number": 11,
+    "node_id": "10",
+    "next_node_id": "10",
+    "bag": {
+      "form": {
+        "form": {
+          "id": "page2",
+          "data": {
+            "meta": {
+              "limit": 50,
+              "offset": 0,
+              "total_items": 11
+            },
+            "occupations": [
+              {
+                "id": "EMPLOYER",
+                "name": "Empregador",
+                "rank": 4,
+                "has_salary": false
+              },
+              {
+                "id": "HOUSEWIFE",
+                "name": "Dona de casa",
+                "rank": 11,
+                "has_salary": false
+              },
+              {
+                "id": "MAID",
+                "name": "Empregado doméstico",
+                "rank": 7,
+                "has_salary": false
+              },
+              {
+                "id": "REGISTERED_PRIVATE",
+                "name": "Empregado com carteira assinada",
+                "rank": 1,
+                "has_salary": true
+              },
+              {
+                "id": "REGISTERED_PUBLIC",
+                "name": "Funcionário Público",
+                "rank": 5,
+                "has_salary": true
+              },
+              {
+                "id": "RENTIER",
+                "name": "Rentista",
+                "rank": 8,
+                "has_salary": false
+              },
+              {
+                "id": "RETIRED",
+                "name": "Aposentado / Pensionista",
+                "rank": 6,
+                "has_salary": false
+              },
+              {
+                "id": "SELF_EMPLOYED",
+                "name": "Autônomo / Profissional Liberal",
+                "rank": 2,
+                "has_salary": false
+              },
+              {
+                "id": "STUDENT",
+                "name": "Estudante",
+                "rank": 9,
+                "has_salary": false
+              },
+              {
+                "id": "UNEMPLOYED",
+                "name": "Desempregado",
+                "rank": 10,
+                "has_salary": false
+              },
+              {
+                "id": "UNREGISTERED",
+                "name": "Empregado sem carteira",
+                "rank": 3,
+                "has_salary": false
+              }
+            ]
+          },
+          "status": 200
+        }
+      },
+      "method": "get",
+      "endpoint": "https://lists-v2.lendico.com.br/api/occupations",
+      "get_response": {
+        "data": {
+          "meta": {
+            "limit": 50,
+            "offset": 0,
+            "total_items": 11
+          },
+          "occupations": [
+            {
+              "id": "EMPLOYER",
+              "name": "Empregador",
+              "rank": 4,
+              "has_salary": false
+            },
+            {
+              "id": "HOUSEWIFE",
+              "name": "Dona de casa",
+              "rank": 11,
+              "has_salary": false
+            },
+            {
+              "id": "MAID",
+              "name": "Empregado doméstico",
+              "rank": 7,
+              "has_salary": false
+            },
+            {
+              "id": "REGISTERED_PRIVATE",
+              "name": "Empregado com carteira assinada",
+              "rank": 1,
+              "has_salary": true
+            },
+            {
+              "id": "REGISTERED_PUBLIC",
+              "name": "Funcionário Público",
+              "rank": 5,
+              "has_salary": true
+            },
+            {
+              "id": "RENTIER",
+              "name": "Rentista",
+              "rank": 8,
+              "has_salary": false
+            },
+            {
+              "id": "RETIRED",
+              "name": "Aposentado / Pensionista",
+              "rank": 6,
+              "has_salary": false
+            },
+            {
+              "id": "SELF_EMPLOYED",
+              "name": "Autônomo / Profissional Liberal",
+              "rank": 2,
+              "has_salary": false
+            },
+            {
+              "id": "STUDENT",
+              "name": "Estudante",
+              "rank": 9,
+              "has_salary": false
+            },
+            {
+              "id": "UNEMPLOYED",
+              "name": "Desempregado",
+              "rank": 10,
+              "has_salary": false
+            },
+            {
+              "id": "UNREGISTERED",
+              "name": "Empregado sem carteira",
+              "rank": 3,
+              "has_salary": false
+            }
           ]
         },
-        "error": null,
-        "status": "waiting",
-        "actor_data": {
-          "claims": [],
-          "actor_id": 1
-        }
+        "status": 200
       }
     },
-  "page3": 
-    {
-      "id": "41ba0500-234f-11ea-b613-2511130d76c6",
-      "created_at": "2019-12-20T17:36:30.032Z",
-      "workflow_id": "94d3a126-234e-11ea-a566-7923e6686408",
-      "blueprint_spec": {},
-      "state": {
-        "id": "41c305b0-234f-11ea-b613-2511130d76c6",
-        "created_at": "2019-12-20T17:36:30.091Z",
-        "process_id": "41ba0500-234f-11ea-b613-2511130d76c6",
-        "step_number": 8,
-        "node_id": "page3",
-        "next_node_id": "8",
-        "bag": {},
-        "external_input": null,
-        "result": {
-          "data": [
-            {}
+    "external_input": null,
+    "result": {
+      "form": {
+        "id": "page2",
+        "data": {
+          "meta": {
+            "limit": 50,
+            "offset": 0,
+            "total_items": 11
+          },
+          "occupations": [
+            {
+              "id": "EMPLOYER",
+              "name": "Empregador",
+              "rank": 4,
+              "has_salary": false
+            },
+            {
+              "id": "HOUSEWIFE",
+              "name": "Dona de casa",
+              "rank": 11,
+              "has_salary": false
+            },
+            {
+              "id": "MAID",
+              "name": "Empregado doméstico",
+              "rank": 7,
+              "has_salary": false
+            },
+            {
+              "id": "REGISTERED_PRIVATE",
+              "name": "Empregado com carteira assinada",
+              "rank": 1,
+              "has_salary": true
+            },
+            {
+              "id": "REGISTERED_PUBLIC",
+              "name": "Funcionário Público",
+              "rank": 5,
+              "has_salary": true
+            },
+            {
+              "id": "RENTIER",
+              "name": "Rentista",
+              "rank": 8,
+              "has_salary": false
+            },
+            {
+              "id": "RETIRED",
+              "name": "Aposentado / Pensionista",
+              "rank": 6,
+              "has_salary": false
+            },
+            {
+              "id": "SELF_EMPLOYED",
+              "name": "Autônomo / Profissional Liberal",
+              "rank": 2,
+              "has_salary": false
+            },
+            {
+              "id": "STUDENT",
+              "name": "Estudante",
+              "rank": 9,
+              "has_salary": false
+            },
+            {
+              "id": "UNEMPLOYED",
+              "name": "Desempregado",
+              "rank": 10,
+              "has_salary": false
+            },
+            {
+              "id": "UNREGISTERED",
+              "name": "Empregado sem carteira",
+              "rank": 3,
+              "has_salary": false
+            }
           ]
         },
-        "error": null,
-        "status": "waiting",
-        "actor_data": {
-          "claims": [],
-          "actor_id": 1
-        }
+        "status": 200
       }
+    },
+    "error": null,
+    "status": "waiting",
+    "actor_data": {
+      "claims": [
+        
+      ],
+      "actor_id": 1
     }
+  }
 }
