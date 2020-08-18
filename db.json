@@ -1,269 +1,65 @@
 {
-    "json": {
-        "id": "1c61f780-28dc-11ea-8113-57bd52e42c02",
-        "created_at": "2019-12-27T19:07:22.232Z",
-        "workflow_id": "d13b8870-28db-11ea-b92e-cb5b7a01f022",
-        "blueprint_spec": {},
-        "state": {
-            "id": "7ca97d20-28dc-11ea-8113-57bd52e42c02",
-            "created_at": "2019-12-27T19:10:03.762Z",
-            "process_id": "1c61f780-28dc-11ea-8113-57bd52e42c02",
-            "step_number": 11,
-            "node_id": "10",
-            "next_node_id": "10",
-            "bag": {
-            "form": {
-                "form": {
-                "id": "page2",
-                "data": {
-                    "meta": {
-                    "limit": 50,
-                    "offset": 0,
-                    "total_items": 11
-                    },
-                    "occupations": [
-                    {
-                        "id": "EMPLOYER",
-                        "name": "Empregador",
-                        "rank": 4,
-                        "has_salary": false
-                    },
-                    {
-                        "id": "HOUSEWIFE",
-                        "name": "Dona de casa",
-                        "rank": 11,
-                        "has_salary": false
-                    },
-                    {
-                        "id": "MAID",
-                        "name": "Empregado doméstico",
-                        "rank": 7,
-                        "has_salary": false
-                    },
-                    {
-                        "id": "REGISTERED_PRIVATE",
-                        "name": "Empregado com carteira assinada",
-                        "rank": 1,
-                        "has_salary": true
-                    },
-                    {
-                        "id": "REGISTERED_PUBLIC",
-                        "name": "Funcionário Público",
-                        "rank": 5,
-                        "has_salary": true
-                    },
-                    {
-                        "id": "RENTIER",
-                        "name": "Rentista",
-                        "rank": 8,
-                        "has_salary": false
-                    },
-                    {
-                        "id": "RETIRED",
-                        "name": "Aposentado / Pensionista",
-                        "rank": 6,
-                        "has_salary": false
-                    },
-                    {
-                        "id": "SELF_EMPLOYED",
-                        "name": "Autônomo / Profissional Liberal",
-                        "rank": 2,
-                        "has_salary": false
-                    },
-                    {
-                        "id": "STUDENT",
-                        "name": "Estudante",
-                        "rank": 9,
-                        "has_salary": false
-                    },
-                    {
-                        "id": "UNEMPLOYED",
-                        "name": "Desempregado",
-                        "rank": 10,
-                        "has_salary": false
-                    },
-                    {
-                        "id": "UNREGISTERED",
-                        "name": "Empregado sem carteira",
-                        "rank": 3,
-                        "has_salary": false
-                    }
-                    ]
-                },
-                "status": 200
-                }
-            },
-            "method": "get",
-            "endpoint": "https://lists-v2.lendico.com.br/api/occupations",
-            "get_response": {
-                "data": {
-                "meta": {
-                    "limit": 50,
-                    "offset": 0,
-                    "total_items": 11
-                },
-                "occupations": [
-                    {
-                    "id": "EMPLOYER",
-                    "name": "Empregador",
-                    "rank": 4,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "HOUSEWIFE",
-                    "name": "Dona de casa",
-                    "rank": 11,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "MAID",
-                    "name": "Empregado doméstico",
-                    "rank": 7,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "REGISTERED_PRIVATE",
-                    "name": "Empregado com carteira assinada",
-                    "rank": 1,
-                    "has_salary": true
-                    },
-                    {
-                    "id": "REGISTERED_PUBLIC",
-                    "name": "Funcionário Público",
-                    "rank": 5,
-                    "has_salary": true
-                    },
-                    {
-                    "id": "RENTIER",
-                    "name": "Rentista",
-                    "rank": 8,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "RETIRED",
-                    "name": "Aposentado / Pensionista",
-                    "rank": 6,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "SELF_EMPLOYED",
-                    "name": "Autônomo / Profissional Liberal",
-                    "rank": 2,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "STUDENT",
-                    "name": "Estudante",
-                    "rank": 9,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "UNEMPLOYED",
-                    "name": "Desempregado",
-                    "rank": 10,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "UNREGISTERED",
-                    "name": "Empregado sem carteira",
-                    "rank": 3,
-                    "has_salary": false
-                    }
-                ]
-                },
-                "status": 200
-            }
-            },
-            "external_input": null,
-            "result": {
-            "form": {
-                "id": "page2",
-                "data": {
-                "meta": {
-                    "limit": 50,
-                    "offset": 0,
-                    "total_items": 11
-                },
-                "occupations": [
-                    {
-                    "id": "EMPLOYER",
-                    "name": "Empregador",
-                    "rank": 4,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "HOUSEWIFE",
-                    "name": "Dona de casa",
-                    "rank": 11,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "MAID",
-                    "name": "Empregado doméstico",
-                    "rank": 7,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "REGISTERED_PRIVATE",
-                    "name": "Empregado com carteira assinada",
-                    "rank": 1,
-                    "has_salary": true
-                    },
-                    {
-                    "id": "REGISTERED_PUBLIC",
-                    "name": "Funcionário Público",
-                    "rank": 5,
-                    "has_salary": true
-                    },
-                    {
-                    "id": "RENTIER",
-                    "name": "Rentista",
-                    "rank": 8,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "RETIRED",
-                    "name": "Aposentado / Pensionista",
-                    "rank": 6,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "SELF_EMPLOYED",
-                    "name": "Autônomo / Profissional Liberal",
-                    "rank": 2,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "STUDENT",
-                    "name": "Estudante",
-                    "rank": 9,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "UNEMPLOYED",
-                    "name": "Desempregado",
-                    "rank": 10,
-                    "has_salary": false
-                    },
-                    {
-                    "id": "UNREGISTERED",
-                    "name": "Empregado sem carteira",
-                    "rank": 3,
-                    "has_salary": false
-                    }
-                ]
-                },
-                "status": 200
-            }
-            },
-            "error": null,
-            "status": "waiting",
-            "actor_data": {
-            "claims": [
-                
-            ],
-            "actor_id": 1
-            }
-        }
-    }
+	"teams": [{
+			"index": 0,
+			"value": "front",
+			"name": "Front End"
+		},
+		{
+			"index": 1,
+			"value": "back",
+			"name": "Back End"
+		}
+	],
+	"front": [{
+			"index": 0,
+			"picture": "http://placehold.it/32x32",
+			"name": "Noreen Horne"
+		},
+		{
+			"index": 1,
+			"picture": "http://placehold.it/32x32",
+			"name": "Margie Washington"
+		},
+		{
+			"index": 2,
+			"picture": "http://placehold.it/32x32",
+			"name": "Claudette Spence"
+		},
+		{
+			"index": 3,
+			"picture": "http://placehold.it/32x32",
+			"name": "Roman Kelly"
+		},
+		{
+			"index": 4,
+			"picture": "http://placehold.it/32x32",
+			"name": "Tracey Munoz"
+		}
+	],
+	"back": [{
+			"index": 0,
+			"picture": "http://placehold.it/32x32",
+			"name": "Kramer Carver"
+		},
+		{
+			"index": 1,
+			"picture": "http://placehold.it/32x32",
+			"name": "Carney Moreno"
+		},
+		{
+			"index": 2,
+			"picture": "http://placehold.it/32x32",
+			"name": "Francesca Le"
+		},
+		{
+			"index": 3,
+			"picture": "http://placehold.it/32x32",
+			"name": "Dee Arnold"
+		},
+		{
+			"index": 4,
+			"picture": "http://placehold.it/32x32",
+			"name": "Autumn Ryan"
+		}
+	]
 }
